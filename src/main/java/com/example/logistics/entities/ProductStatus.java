@@ -1,4 +1,4 @@
-package com.bosch.logistics.entity;
+package com.example.logistics.entities;
 
 import javax.persistence.*;
 import java.util.Set;

@@ -29,6 +29,14 @@ public class Product {
     @ManyToOne
     private ProductType productType;
 
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private ProductStatus productStatus;
+
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private DeliveryTime deliveryTime;
+
     public Product(long id, String name, double weight) {
         this.id = id;
         this.name = name;
